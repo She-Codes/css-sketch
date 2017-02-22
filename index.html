@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Shapes</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="art-board">
+  <div id="staging">
+    <button id="add">Add Div</button>
+  </div><!-- end #staging -->
+
+  <div id="canvas">
+
+  </div><!-- end #canvas -->
+
+
+  <section id="controls">
+    <div class="row">
+      <button id="duplicate">duplicate</button>
+    </div>
+    <!-- BASE STYLES -->
+    <div id="base" class="panel">
+      <div class="row">
+        <div class="label">background-color</div>
+        <input class="background-color" type="color" value="#ff0000" data-property="backgroundColor">
+        <div class="label">transparent?</div>
+        <input class="background-color" type="checkbox" value="transparent" data-property="backgroundColor">
+        <div class="label">height</div>
+        <input class="height" value="50" type="number" data-property="height" data-unit="px">
+        <div class="label">width</div>
+        <input class="width" value="50" type="number" data-property="width" data-unit="px">
+      </div><!-- end .row -->
+    </div><!-- end #base -->
+
+
+    <!-- BORDER RADIUS -->
+    <div id="border-radius" class="panel">
+      <div class="row">
+        <div class="label">border-top-left-radius</div>
+        <div>
+          <input class="border-top-left-radius-circle-range" type="range" min="0" max="100" step="1" value="0" data-property="borderTopLeftRadius" data-unit="%">
+        </div>
+        <div class="output border-top-left-radius-circle-range"></div>
+        <div>
+          <input class="border-top-left-radius-circle-input" type="number" value="0" data-property="borderTopLeftRadius" data-unit="px">
+        </div> 
+        <div class="ellipses">
+          <input class="border-top-left-radius-ellipse-range-horizontal" type="range" min="0" max="100" step="1" value="0" data-property="borderTopLeftRadius" data-ellipse="horizontal" data-unit="%">
+          <input class="border-top-left-radius-ellipse-range-vertical" type="range" min="0" max="100" step="1" value="0" data-property="borderTopLeftRadius" data-ellipse="vertical" data-unit="%">
+        </div><!-- end .ellipses -->
+        <div class="output">
+          <span class="border-top-left-radius-ellipse-range-horizontal output"></span>
+          <span class="border-top-left-radius-ellipse-range-vertical output"></span>
+        </div>
+        <div>
+          <input class="border-top-left-radius-ellipse-input" type="number" value="0" data-property="borderTopLeftRadius" data-unit="px" data-ellipse="vertical">
+        </div> 
+        <div>
+          <input class="border-top-left-radius-ellipse-input" type="number" value="0" data-property="borderTopLeftRadius" data-unit="px" data-ellipse="horizontal">
+        </div> 
+      </div><!-- end .row -->
+
+      <div class="row">
+        <div class="label">border-top-right-radius</div>
+        <div>
+          <input class="border-top-right-radius-circle-range" type="range" min="0" max="100" step="1" value="0" data-property="borderTopRightRadius" data-unit="%"></div>
+        <div class="output border-top-right-radius-circle-range"></div> 
+        <div>
+          <input class="border-top-right-radius-circle-input" type="number" value="0" data-property="borderTopRightRadius" data-unit="px">
+        </div>
+        <div class="ellipses">
+          <input class="border-top-right-radius-ellipse-range-horizontal" type="range" min="0" max="100" step="1" value="0" data-property="borderTopRightRadius" data-ellipse="horizontal" data-unit="%">
+          <input class="border-top-right-radius-ellipse-range-vertical" type="range" min="0" max="100" step="1" value="0" data-property="borderTopRightRadius" data-ellipse="vertical" data-unit="%">
+        </div><!-- end .ellipses -->
+        <div class="output">
+          <span class="border-top-right-radius-ellipse-range-horizontal output"></span>
+          <span class="border-top-right-radius-ellipse-range-vertical output"></span>
+        </div>
+        <div>
+          <input class="border-top-right-radius-ellipse-input" type="number" value="0" data-property="borderTopRightRadius" data-unit="px" data-ellipse="vertical">
+        </div> 
+        <div>
+          <input class="border-top-right-radius-ellipse-input" type="number" value="0" data-property="borderTopRightRadius" data-unit="px" data-ellipse="horizontal">
+        </div>
+      </div><!-- end .row -->
+
+      <div class="row">
+        <div class="label">border-bottom-right-radius</div>
+        <div>
+          <input class="border-bottom-right-radius-circle-range" type="range" min="0" max="100" step="1" value="0" data-property="borderBottomRightRadius" data-unit="%"></div>
+        <div class="output border-bottom-right-radius-circle-range"></div> 
+        <div>
+          <input class="border-bottom-right-radius-circle-input" type="number" value="0" data-property="borderBottomRightRadius" data-unit="px">
+        </div>
+        <div class="ellipses">
+          <input class="border-bottom-right-radius-ellipse-range-horizontal" type="range" min="0" max="100" step="1" value="0" data-property="borderBottomRightRadius" data-ellipse="horizontal" data-unit="%">
+          <input class="border-bottom-right-radius-ellipse-range-vertical" type="range" min="0" max="100" step="1" value="0" data-property="borderBottomRightRadius" data-ellipse="vertical" data-unit="%">
+        </div><!-- end .ellipses -->
+        <div class="output">
+          <span class="border-bottom-right-radius-ellipse-range-horizontal output"></span>
+          <span class="border-bottom-right-radius-ellipse-range-vertical output"></span>
+        </div>
+        <div>
+          <input class="border-bottom-right-radius-ellipse-input" type="number" value="0" data-property="borderBottomRightRadius" data-unit="px" data-ellipse="vertical">
+        </div> 
+        <div>
+          <input class="border-bottom-right-radius-ellipse-input" type="number" value="0" data-property="borderBottomRightRadius" data-unit="px" data-ellipse="horizontal">
+        </div>
+      </div><!-- end .row -->
+
+      <div class="row">
+        <div class="label">border-bottom-left-radius</div>
+        <div>
+          <input class="border-bottom-left-radius-circle-range" type="range" min="0" max="100" step="1" value="0" data-property="borderBottomLeftRadius" data-unit="%"></div>
+        <div class="output border-bottom-left-radius-circle-range"></div> 
+        <div>
+          <input class="border-bottom-left-radius-circle-input" type="number" value="0" data-property="borderBottomLeftRadius" data-unit="px">
+        </div>
+        <div class="ellipses">
+          <input class="border-bottom-left-radius-ellipse-range-horizontal" type="range" min="0" max="100" step="1" value="0" data-property="borderBottomLeftRadius" data-ellipse="horizontal" data-unit="%">
+          <input class="border-bottom-left-radius-ellipse-range-vertical" type="range" min="0" max="100" step="1" value="0" data-property="borderBottomLeftRadius" data-ellipse="vertical" data-unit="%">
+        </div><!-- end .ellipses -->
+        <div class="output">
+          <span class="border-bottom-left-radius-ellipse-range-horizontal output"></span>
+          <span class="border-bottom-left-radius-ellipse-range-vertical output"></span>
+        </div>
+        <div>
+          <input class="border-bottom-left-radius-ellipse-input" type="number" value="0" data-property="borderBottomLeftRadius" data-unit="px" data-ellipse="vertical">
+        </div> 
+        <div>
+          <input class="border-bottom-left-radius-ellipse-input" type="number" value="0" data-property="borderBottomLeftRadius" data-unit="px" data-ellipse="horizontal">
+        </div>
+      </div><!-- end .row -->
+    </div><!-- end #border-radius -->
+
+
+    <!-- BORDER -->
+    <div id="border" class="panel">
+      <div class="row">
+        <div class="label">border-top-width</div>
+        <input class="border-top-width" type="number" value="0" data-property="borderTopWidth" data-unit="px">
+        <div class="label">border-top-color</div>
+        <input class="border-top-color" type="color" value="#000000" data-property="borderTopColor">
+        <div class="label">transparent?</div>
+        <input class="border-top-color" type="checkbox" value="transparent" data-property="borderTopColor">
+      </div><!-- end .row -->
+
+      <div class="row">
+        <div class="label">border-right-width</div>
+        <input class="border-right-width" type="number" value="0" data-property="borderRightWidth" data-unit="px">
+        <div class="label">border-right-color</div>
+        <input class="border-right-color" type="color" value="#000000" data-property="borderRightColor">
+        <div class="label">transparent?</div>
+        <input class="border-right-color" type="checkbox" value="transparent" data-property="borderRightColor">
+      </div><!-- end .row -->
+
+      <div class="row">
+        <div class="label">border-bottom-width</div>
+        <input class="border-bottom-width" type="number" value="0" data-property="borderBottomWidth" data-unit="px">
+        <div class="label">border-bottom-color</div>
+        <input class="border-bottom-color" type="color" value="#000000" data-property="borderBottomColor">
+        <div class="label">transparent?</div>
+        <input class="border-bottom-color" type="checkbox" value="transparent" data-property="borderBottomColor">
+      </div><!-- end .row -->
+
+      <div class="row">
+        <div class="label">border-left-width</div>
+        <input class="border-left-width" type="number" value="0" data-property="borderLeftWidth" data-unit="px">
+        <div class="label">border-left-color</div>
+        <input class="border-left-color" type="color" value="#000000" data-property="borderLeftColor">
+        <div class="label">transparent?</div>
+        <input class="border-left-color" type="checkbox" value="transparent" data-property="borderLeftColor">
+      </div><!-- end .row -->
+    </div><!-- end #border -->
+
+
+    <!-- ROTATE -->
+    <div id="rotate" class="panel">
+      <div class="row">
+        <div class="label">transform: rotate()</div>
+        <div><input class="transform-range" type="range" min="-180" max="180" step="1" value="0" data-property="transform" data-unit="deg">
+        <div class="output transform-range"></div>
+        </div>
+      </div><!-- end .row -->
+    </div><!-- end #rotate -->
+
+    <!-- Z-INDEX -->
+    <div id="z-index" class="panel">
+      <div class="row">
+        <div class="label">z-index</div>
+        <input class="z-index" type="number" value="0" data-property="zIndex">
+      </div><!-- end .row -->
+    </div><!-- end #z-index -->
+  </section><!-- end #controls -->
+</div><!-- end #art-board -->
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
