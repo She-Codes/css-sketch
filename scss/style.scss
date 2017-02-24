@@ -1,10 +1,12 @@
 /* ==========================================================================
    RESET
    ========================================================================== */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -14,8 +16,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -23,61 +25,71 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
-
+  vertical-align: baseline;
+}
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-  display: block; }
-
+  display: block;
+}
 body {
-  line-height: 1; }
-
+  line-height: 1;
+}
 ol, ul {
-  list-style: none; }
-
+  list-style: none;
+}
 blockquote, q {
-  quotes: none; }
-
+  quotes: none;
+}
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none; }
-
+  content: none;
+}
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 /* ==========================================================================
    DEFAULT STYLES
    ========================================================================== */
+
 html, body {
   height: 100%;
-  color: #FFF; }
+  color: #FFF;
+}
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 *, *:before, *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 /* ==========================================================================
    BASE
    ========================================================================== */
+
 #art-board {
   display: flex;
-  height: 100%; }
+  height: 100%;
+}
 
 #staging {
-  width: 10%; }
+  width: 10%;
+}
 
 #canvas {
   width: 33%;
   border-left: 2px solid;
-  border-right: 2px solid; }
+  border-right: 2px solid;
+}
 
 #staging, #controls {
-  background: #333333; }
+  background: #333333;
+}
 
 .shape {
   position: absolute;
@@ -86,9 +98,9 @@ html {
   height: 50px;
   top: 5%;
   left: 5%;
-  border: 0 solid #000000; }
+  border: 0 solid #000000;
+}
 
 .row {
-  display: flex; }
-
-/*# sourceMappingURL=style.css.map */
+  display: flex;
+}

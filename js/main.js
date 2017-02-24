@@ -151,7 +151,7 @@
 
     function dropMe(e) {
       var draggableBox = draggable.getBoundingClientRect();
-
+      //debugger;
       document.removeEventListener('mousemove', dragMe);
       document.removeEventListener('mouseup', dropMe);
       draggable = null;
